@@ -18,10 +18,10 @@ const Landing = () => {
     sectionTitle: "text-center font-bold text-button text-2xl",
     scheduleGrid: "grid grid-cols-auto gap-8 mt-6",
     scheduleTitle: "text-purple font-bold text-md text-center mb-2",
-    time: "text-center text-button mb-2 text-sm",
+    time: "text-center text-black mb-2 text-sm",
 
     calltoAction:
-      "p-8 bg-accent/60 flex flex-col justify-center items-center mb-12",
+      "p-8 bg-accent/60 flex flex-col justify-center items-center my-12",
     callToActionText: "text-center",
     link: "font-bold hover:text-button hover:underline",
     button:
@@ -30,6 +30,7 @@ const Landing = () => {
 
   return (
     <div id="landing" className="bg-white">
+      {/* HERO IMAGE */}
       <div className={styles.banner}>
         <img
           src={banner}
@@ -53,53 +54,76 @@ const Landing = () => {
         </h2>
       </div>
 
+      {/* CALL TO ACTION -  GUITAR LESSONS */}
+      <div className={styles.calltoAction}>
+        <h2 className={styles.scheduleTitle}>DO YOU WANT TO LEARN GUITAR?</h2>
+        <p className={styles.callToActionText}>
+          Register your interest in our beginner&apos;s group lessons for
+          children, teens and adults by using the button below.
+        </p>
+
+        <Link to="Register">
+          <button className={styles.button}>Register</button>
+        </Link>
+      </div>
+
       {/* SCHEDULE */}
       <div className={styles.scheduleContainer}>
         <h2 id="schedule" className={styles.sectionTitle}>
           Schedule
         </h2>
         <p className="text-center mt-4">
-          All classes are subject to availability and will work on a first come,
-          first serve basis.
+          At the moment there are just two sessions available. As YGE grows, we
+          will be expanding the ensemble choices.
+          <br />
+          <br />
+          When you join us, you will be assigned into a group that best suits
+          your ability.
+          <br />
+          <br />
+          You will be asked for a preferred time option on the sign up sheet,
+          and we will stick to this as much as possible.
         </p>
 
         <div className={styles.scheduleGrid}>
           <div>
             <h2 className={styles.scheduleTitle}>
-              Class One Ensemble Rehearsals
+              Ensemble Rehearsal - Slot 1
             </h2>
             <h3 className={styles.time}>Saturday @ 9:00 to 9:45</h3>
-            <p>
-              This class invites students who are complete beginners up to a
-              Grade 3.
+            <p className="text-center text-black text-xs mt-4">
+              <strong>Location:</strong>
+              <br />
+              St. Aelred&apos;s Community Center, <br />
+              Fifth Ave, YO31 0PN
             </p>
           </div>
 
           <div>
-            <h2 className={styles.scheduleTitle}>Senior Ensemble Rehearsals</h2>
+            <h2 className={styles.scheduleTitle}>
+              Ensemble Rehearsals- Slot 2
+            </h2>
             <h3 className={styles.time}>Saturday @ 10:00 to 10:45</h3>
+            <p className="text-center text-black text-xs mt-4">
+              <strong>Location:</strong>
+              <br />
+              St. Aelred&apos;s Community Center, <br />
+              Fifth Ave, YO31 0PN
+            </p>
           </div>
         </div>
-      </div>
 
-      {/* CALL TO ACTION */}
-      <div className={styles.calltoAction}>
-        <h2 className={styles.scheduleTitle}>
-          Do you want to learn the guitar?
-        </h2>
-        <p className={styles.callToActionText}>
-          Register your interest in our NEW group lessons by using the button
-          below, <br />
-          or{" "}
-          <a href="/#contact" className={styles.link}>
-            contact us here
-          </a>{" "}
-          to find out more information.
-        </p>
-
-        <Link>
-          <button className={styles.button}>Register</button>
-        </Link>
+        {/* CALL TO ACTION - SIGN UP */}
+        <div className="mt-16 flex flex-col justify-center mx-12">
+          <h2 className={styles.sectionTitle}>Join YGE</h2>
+          <p className="text-center text-black mt-4">
+            If this sounds like something you&apos;d be interested in, sign up
+            now!
+          </p>
+          <a href="/#sign-up" className="flex justify-center">
+            <button className={styles.button}>Sign Up</button>
+          </a>
+        </div>
       </div>
     </div>
   );
