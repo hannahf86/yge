@@ -15,10 +15,6 @@ import { motion } from "framer-motion";
 // COMPONENTS
 import ToggleButton from "./ToggleButton";
 
-// ICONS
-import { HiHome, HiBriefcase, HiBookOpen, HiMail } from "react-icons/hi";
-import { TbMessage2Question } from "react-icons/tb";
-
 const variants = {
   open: {
     clipPath: "circle(1200px at 50px 50px)",
@@ -83,35 +79,31 @@ const RootNav = () => {
           <motion.div onClick={handleNav}>
             <Link to="/" onClick={toTop}>
               <span className={mobileStyles.menuItem}>
-                <HiHome className={mobileStyles.menuIcon} />
                 <p className="text-sm ">Home</p>
               </span>
             </Link>
 
-            <Link to="services" onClick={toTop}>
+            {/* <Link to="services" onClick={toTop}>
               <span className={mobileStyles.menuItem}>
                 <HiBriefcase className={mobileStyles.menuIcon} />
                 <p className="text-sm ">Class Info</p>
               </span>
-            </Link>
+            </Link> */}
 
             <Link to="about" onClick={toTop}>
               <span className={mobileStyles.menuItem}>
-                <HiBookOpen className={mobileStyles.menuIcon} />
                 <p className="text-sm ">About</p>
               </span>
             </Link>
 
             <Link to="faqs" onClick={toTop}>
               <span className={mobileStyles.menuItem}>
-                <TbMessage2Question className={mobileStyles.menuIcon} />
                 <p className="text-sm ">Sign Up</p>
               </span>
             </Link>
 
             <Link to="contact" onClick={toTop}>
               <span className={mobileStyles.menuItem}>
-                <HiMail className={mobileStyles.menuIcon} />
                 <p className="text-sm ">Contact</p>
               </span>
             </Link>
