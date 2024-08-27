@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import banner from "../Assets/banner.webp";
 import bannerXS from "../Assets/banner-xs.webp";
 
+// ICONS
+import { FaCheck } from "react-icons/fa";
+
 const Landing = () => {
   const styles = {
     banner: "w-full pt-24",
@@ -14,14 +17,14 @@ const Landing = () => {
       "mx-8 font-serif italic text-black text-base md: text-center mb-12",
     description: "text-black text-center text-base",
 
-    scheduleContainer: "bg-[#FFF] px-12 mt-12 py-12",
+    scheduleContainer: "bg-[#FFF] px-8 mt-12 py-12",
     sectionTitle: "text-center font-bold text-button text-2xl",
     scheduleGrid: "grid grid-cols-auto gap-8 mt-6",
-    scheduleTitle: "text-purple font-bold text-md text-center mb-2",
+    scheduleTitle: "text-purple font-bold text-lg text-center mb-2",
     time: "text-center text-black mb-2 text-sm",
 
     calltoAction:
-      "p-8 bg-accent/60 flex flex-col justify-center items-center my-12",
+      "px-6 py-12 bg-accent/60 flex flex-col justify-center items-center my-12",
     callToActionText: "text-center",
     link: "font-bold hover:text-button hover:underline",
     button:
@@ -45,13 +48,64 @@ const Landing = () => {
       </div>
 
       {/* COMPANY INTRO */}
-      <div>
+      <div id="company-info">
         <h1 className={styles.title}>
           Group Guitar Lessons <br />&<br /> Ensemble Rehearsals
         </h1>
         <h2 className={styles.subtitle}>
           Making acoustic and classical guitar music available to all
         </h2>
+
+        <div id="what-we-do" className="text-justify bg-[#FFF] py-12 px-8">
+          <h3 className="text-button font-bold text-lg text-center mb-8">
+            What do we do?
+          </h3>
+          <p>
+            YGE is set up for guitarists of all ages, abilities and styles to
+            come together and indulge in one of our passions.
+            <br />
+            <br />
+            We will play a combination of traditional classical guitar music,
+            folk music, &quot;pop&quot; (all inclusive title, so rock, country,
+            pop etc), film music themes, and of course... Christmas music!
+            <br />
+            <br />
+            At the end of each term, we will organise a short concert for our
+            friends and family, with drinks and cake. Participation is not
+            required, but encouraged, because its so much fun with your friend.
+          </p>
+        </div>
+
+        <div id="what-we-do" className=" bg-[#FFF] py-12 px-8 mt-12">
+          <h3 className="text-button font-bold text-lg text-center mb-8">
+            These ensembles are for you if want...
+          </h3>
+          <li className="mb-6 list-none flex items-center justify-center text-sm">
+            <div>
+              {" "}
+              <FaCheck size={20} className="mr-6 text-green-700" />
+            </div>
+            More performance opportunities as a guitarist, as a soloist or with
+            an ensemble
+          </li>
+
+          <li className="mb-6 list-none flex items-center justify-center text-sm">
+            <div>
+              {" "}
+              <FaCheck size={20} className="mr-6 text-green-700" />
+            </div>
+            To develop your aural and reading skills outside of your normal
+            lessons
+          </li>
+
+          <li className="mb-6 list-none flex items-center justify-center text-sm">
+            <div>
+              {" "}
+              <FaCheck size={20} className="mr-6 text-green-700" />
+            </div>
+            To grow as a musician in a supportive and encouraging environment
+          </li>
+        </div>
       </div>
 
       {/* CALL TO ACTION -  GUITAR LESSONS */}
@@ -67,11 +121,9 @@ const Landing = () => {
         </Link>
       </div>
 
-      {/* SCHEDULE */}
-      <div className={styles.scheduleContainer}>
-        <h2 id="schedule" className={styles.sectionTitle}>
-          Schedule
-        </h2>
+      {/* CLASS INFO */}
+      <div id="class-info" className={styles.scheduleContainer}>
+        <h2 className={styles.sectionTitle}>Class Info</h2>
         <p className="text-center mt-4">
           At the moment there are just two sessions available. As YGE grows, we
           will be expanding the ensemble choices.
@@ -79,16 +131,13 @@ const Landing = () => {
           <br />
           When you join us, you will be assigned into a group that best suits
           your ability.
-          <br />
-          <br />
-          You will be asked for a preferred time option on the sign up sheet,
-          and we will stick to this as much as possible.
         </p>
 
         <div className={styles.scheduleGrid}>
           <div>
             <h2 className={styles.scheduleTitle}>
-              Ensemble Rehearsal - Slot 1
+              Ensemble Rehearsal <br />
+              Slot 1
             </h2>
             <h3 className={styles.time}>Saturday @ 9:00 to 9:45</h3>
             <p className="text-center text-black text-xs mt-4">
@@ -101,7 +150,8 @@ const Landing = () => {
 
           <div>
             <h2 className={styles.scheduleTitle}>
-              Ensemble Rehearsals- Slot 2
+              Ensemble Rehearsals
+              <br /> Slot 2
             </h2>
             <h3 className={styles.time}>Saturday @ 10:00 to 10:45</h3>
             <p className="text-center text-black text-xs mt-4">
@@ -114,9 +164,9 @@ const Landing = () => {
         </div>
 
         {/* CALL TO ACTION - SIGN UP */}
-        <div className="mt-16 flex flex-col justify-center mx-12">
+        <div className="mt-16 flex flex-col justify-center mx-6">
           <h2 className={styles.sectionTitle}>Join YGE</h2>
-          <p className="text-center text-black mt-4">
+          <p className="text-center text-black mt-4 text-sm">
             If this sounds like something you&apos;d be interested in, sign up
             now!
           </p>
