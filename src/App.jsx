@@ -12,6 +12,7 @@ import RootNav from "./Components/RootNav";
 // PAGES
 import Error from "./Pages/Error";
 import Landing from "./Pages/Landing";
+import SignUp from "./Pages/SignUp";
 
 // HELPERS & LOADERS
 
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootNav />}>
       <Route index element={<Landing />} />
+      <Route path="signup" element={<SignUp />} />
       {/* ERROR HANDLING */}
       <Route path="*" element={<Error />} />
     </Route>,

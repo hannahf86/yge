@@ -85,7 +85,7 @@ const Landing = () => {
               {" "}
               <FaCheck size={20} className="mr-6 text-green-700" />
             </div>
-            More performance opportunities as a guitarist, as a soloist or with
+            More performance opportunities on your guitar, as a soloist or with
             an ensemble
           </li>
 
@@ -96,6 +96,14 @@ const Landing = () => {
             </div>
             To develop your aural and reading skills outside of your normal
             lessons
+          </li>
+
+          <li className="mb-6 list-none flex items-center justify-center text-sm">
+            <div>
+              {" "}
+              <FaCheck size={20} className="mr-6 text-green-700" />
+            </div>
+            Meet likeminded people and have fun
           </li>
 
           <li className="mb-6 list-none flex items-center justify-center text-sm">
@@ -170,7 +178,7 @@ const Landing = () => {
             If this sounds like something you&apos;d be interested in, sign up
             now!
           </p>
-          <a href="/#sign-up" className="flex justify-center">
+          <a href="/signUp" className="flex justify-center">
             <button className={styles.button}>Sign Up</button>
           </a>
         </div>
