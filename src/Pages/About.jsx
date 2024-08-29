@@ -1,5 +1,4 @@
 // images
-import hannah from "../Assets/profile-pic.jpg";
 
 // icons
 import { GrInstagram, GrYoutube } from "react-icons/gr";
@@ -47,7 +46,7 @@ const About = () => {
           <h1 className={mobileStyles.title}>About Hannah</h1>
           <div className={mobileStyles.bio}>
             <div className={mobileStyles.image}>
-              <img src={hannah} />
+              <img src={""} />
             </div>
             <p className="text-xl">
               Hannah began studying music at the age of 3, starting with piano
@@ -152,7 +151,7 @@ const About = () => {
           <div className={styles.container}>
             <div className={styles.sidebar}>
               <div className={styles.image}>
-                <img src={hannah} />
+                <img src={""} />
               </div>
 
               <div>
