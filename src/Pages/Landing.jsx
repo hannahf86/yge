@@ -56,7 +56,9 @@ const Landing = () => {
           Making acoustic and classical guitar music available to all
         </h2>
 
-        <div id="what-we-do" className="text-justify bg-[#FFF] py-12 px-8">
+        <div
+          id="what-we-do"
+          className="text-justify lg:text-center bg-[#FFF] py-12 px-8">
           <h3 className="text-button font-bold text-lg text-center mb-8">
             What do we do?
           </h3>

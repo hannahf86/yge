@@ -38,7 +38,7 @@ const Contact = () => {
     background: "bg-white h-full w-screen z-0 pb-12 pt-24",
     textContainer: "relative mx-8",
     button:
-      "bg-button py-2 px-6 rounded-md text-white mt-6 border-2 border-button hover:bg-accent hover:text-button hover:font-bold",
+      "bg-button py-2 px-6 rounded-md text-white mt-6 border-2 border-button hover:bg-white hover:text-button hover:font-bold",
     contactContainer: "hidden",
     formContainer: "flex flex-col justify-center items-center w-full mb-12",
     input:
@@ -171,7 +171,12 @@ const Contact = () => {
             className={layoutStyles.input}
           />
           <button className={layoutStyles.button}>Submit</button>
-          <Toaster />
+          <Toaster
+            position="top-center"
+            toastOptions={{
+              duration: 6000,
+            }}
+          />
         </motion.form>
       </div>
 
