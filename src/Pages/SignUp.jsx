@@ -55,8 +55,6 @@ const SignUp = () => {
           toast.success(
             `Thanks for your email ${contactName}! We'll be in touch soon!`,
           );
-
-          return <h2>Thanks `${contactName}`, we&apos;ll be in touch soon!</h2>;
         },
         () => {
           toast.error(
