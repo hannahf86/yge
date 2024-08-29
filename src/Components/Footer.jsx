@@ -6,6 +6,9 @@ import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 import { FaMobileScreen } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
+// IMAGES
+import logo from "../Assets/profilePic.png";
+
 const Footer = () => {
   // TOP OF PAGE
   const toTop = () => {
@@ -19,7 +22,7 @@ const Footer = () => {
   // STYLES
   const layoutStyles = {
     container:
-      "w-screen p-6 sm:px-10 bg-green bottom-0 md:grid grid-cols-4 grid-rows-3",
+      "w-screen p-6 sm:px-10 bg-button bottom-0 md:grid grid-cols-4 grid-rows-3",
     logo: "w-20",
 
     newsletterContainer:
@@ -36,7 +39,7 @@ const Footer = () => {
     contactIcons: "text-white hover:text-accent mr-2 cursor-pointer",
 
     navContainer:
-      "flex justify-between mt-4 text-white cursor-pointer md:col-start-4 md:row-start-1 md:row-end-4 md:flex-col md:text-right md:row-span-3",
+      "flex justify-between mt-12 text-white cursor-pointer md:col-start-4 md:row-start-1 md:row-end-4 md:flex-col md:text-right md:row-span-3",
     navLink: "hover:text-accent font-thin text-xs",
 
     legalContainer:
@@ -51,11 +54,11 @@ const Footer = () => {
     <div id="footer" className={layoutStyles.container}>
       {/* LOGO */}
       <div className="flex items-center mr-8">
-        <img src="./logo.png" className={layoutStyles.logo} />
-        <h3 className="text-white font-bold">JORVIK WEB DEV</h3>
+        <img src={logo} className={layoutStyles.logo} />
       </div>
+
       {/* NEWSLETTER */}
-      <div id="col01" className={layoutStyles.newsletterContainer}>
+      {/* <div id="col01" className={layoutStyles.newsletterContainer}>
         <p className={layoutStyles.desc}>
           Sign up to our newsletter to receive updates, offers and tips
         </p>
@@ -63,22 +66,20 @@ const Footer = () => {
           <input placeholder="Email" className={layoutStyles.input} />
           <button className={layoutStyles.button}>Sign up</button>
         </form>
-      </div>
+      </div> */}
 
       {/* SOCIAL ICONS */}
       <div id="socialIcons" className={layoutStyles.socialContainer}>
         <div className="flex mt-4">
           <FaFacebookSquare size={25} className={layoutStyles.contactIcons} />{" "}
           <small className="text-white tracking-wider text-sm">
-            Jorvik Web Dev
+            York Guitar Ensemble
           </small>
         </div>
 
         <div className="flex mt-4">
           <FaInstagram size={25} className={layoutStyles.contactIcons} />{" "}
-          <small className="text-white tracking-wider text-sm">
-            /jorvikwebdev
-          </small>
+          <small className="text-white tracking-wider text-sm">/yge</small>
         </div>
       </div>
 
@@ -93,7 +94,7 @@ const Footer = () => {
         <div className="flex mt-4">
           <MdEmail size={25} className={layoutStyles.contactIcons} />{" "}
           <small className="text-white tracking-wider text-sm">
-            hello@jorvikweb.dev
+            hello@yorkguitarensemble.com
           </small>
         </div>
       </div>
@@ -103,14 +104,11 @@ const Footer = () => {
         <Link to="/" className={layoutStyles.navLink} onClick={toTop}>
           Home
         </Link>
-        <Link to="services" className={layoutStyles.navLink} onClick={toTop}>
-          Services
-        </Link>
         <Link to="about" className={layoutStyles.navLink} onClick={toTop}>
           About
         </Link>
-        <Link to="faqs" className={layoutStyles.navLink} onClick={toTop}>
-          FAQs
+        <Link to="signup" className={layoutStyles.navLink} onClick={toTop}>
+          Sign Up
         </Link>
         <Link to="contact" className={layoutStyles.navLink} onClick={toTop}>
           Contact

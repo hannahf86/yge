@@ -7,7 +7,7 @@ import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 
 // PAGES
-// import Footer from "./Footer";
+import Footer from "./Footer";
 
 // MOTION
 import { motion } from "framer-motion";
@@ -55,7 +55,7 @@ const RootNav = () => {
     fullMenu:
       "bg-white fixed w-screen h-screen p-20 md:p-0 flex flex-col justify-center items-center z-30 md:w-2/6 lg:w-2/6 ",
     menuItem:
-      "bg-button text-white w-60 h-16 m-8 rounded-lg flex justify-center items-center sm:w-96 sm:h-16 md:w-60 lg:w-72 sm:my-8 hover:bg-accent hover:text-white",
+      "bg-button text-white w-60 h-16 m-8 rounded-lg flex justify-center items-center sm:w-96 sm:h-16 md:w-60 lg:w-72 sm:my-8 hover:bg-accent hover:text-button hover:font-bold",
     menuIcon: "mr-3 tracking-widest text-sm ",
   };
 
@@ -133,7 +133,7 @@ const RootNav = () => {
 
       <main>
         <Outlet />
-        {/* <Footer /> */}
+        <Footer />
       </main>
     </div>
   );

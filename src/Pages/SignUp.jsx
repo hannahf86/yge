@@ -1,5 +1,7 @@
-// EMAIL JS
+// REACT
 import { useRef, useState } from "react";
+
+// EMAIL JS
 import emailjs from "@emailjs/browser";
 
 // TOAST
@@ -22,6 +24,10 @@ const SignUp = () => {
 
   // CLEAR FORM
   const [name, setName] = useState("");
+  const [grade, setGrade] = useState("");
+  const [pieces, setPieces] = useState("");
+  const [story, setStory] = useState("");
+  const [additional, setAdditional] = useState("");
   const [contactName, setContactName] = useState("");
   const [contactEmail, setContactEmail] = useState("");
   const [contactMobile, setContactMobile] = useState("");
@@ -32,8 +38,13 @@ const SignUp = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setName("");
-    // setEmail("");
-    // setMessage("");
+    setGrade("");
+    setPieces("");
+    setStory("");
+    setAdditional("");
+    setContactName("");
+    setContactEmail("");
+    setContactMobile("");
 
     emailjs
       .sendForm("service_vgs76jb", "template_dq3esin", form.current, {
@@ -44,8 +55,10 @@ const SignUp = () => {
           toast.success(
             `Thanks for your email ${contactName}! We'll be in touch soon!`,
           );
+
+          return <h2>Thanks `${contactName}`, we&apos;ll be in touch soon!</h2>;
         },
-        (error) => {
+        () => {
           toast.error(
             `Oh no! There's been an error! If the problem persists, please contact hello@jorvikweb.dev`,
           );
@@ -56,6 +69,9 @@ const SignUp = () => {
   return (
     <div id="signUp" className={styles.background}>
       <h1 className={styles.title}>Sign up</h1>
+      <p className="pb-6 text-center">
+        Fill in the form below and Hannah will be in touch.
+      </p>
 
       <form ref={form} onSubmit={sendEmail} className="pb-20">
         {/* STUDENT INFORMATION */}
@@ -106,6 +122,8 @@ const SignUp = () => {
           type="text"
           name="message"
           placeholder="Grade"
+          value={grade}
+          onChange={(e) => setGrade(e.target.value)}
           className={styles.input}
         />
 
@@ -118,6 +136,8 @@ const SignUp = () => {
           name="message"
           placeholder="Pieces you are learning"
           className={styles.textArea}
+          value={pieces}
+          onChange={(e) => setPieces(e.target.value)}
           required
         />
 
@@ -167,6 +187,8 @@ const SignUp = () => {
           name="message"
           placeholder="Your story on the guitar"
           className={styles.textArea}
+          value={story}
+          onChange={(e) => setStory(e.target.value)}
           required
         />
 
@@ -180,6 +202,8 @@ const SignUp = () => {
           name="message"
           placeholder="Additional information"
           className={styles.textArea}
+          value={additional}
+          onChange={(e) => setAdditional(e.target.value)}
           required
         />
 
@@ -229,7 +253,12 @@ const SignUp = () => {
         />
 
         <button className={styles.button}>Join us!</button>
-        <Toaster />
+        <Toaster
+          position="top-center"
+          toastOptions={{
+            duration: 6000,
+          }}
+        />
       </form>
     </div>
   );
