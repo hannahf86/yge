@@ -68,7 +68,7 @@ const SignUp = () => {
     <div id="signUp" className={styles.background}>
       <h1 className={styles.title}>Sign up</h1>
       <p className="pb-6 text-center">
-        Fill in the form below and Hannah will be in touch.
+        Fill in the form below and we will be in touch.
       </p>
 
       <form ref={form} onSubmit={sendEmail} className="pb-20">

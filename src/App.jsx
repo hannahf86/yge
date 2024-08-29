@@ -14,6 +14,7 @@ import Error from "./Pages/Error";
 import Landing from "./Pages/Landing";
 import SignUp from "./Pages/SignUp";
 import About from "./Pages/About";
+import Contact from "./Pages/Contact";
 
 // HELPERS & LOADERS
 
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route index element={<Landing />} />
       <Route path="signup" element={<SignUp />} />
       <Route path="about" element={<About />} />
+      <Route path="contact" element={<Contact />} />
       {/* ERROR HANDLING */}
       <Route path="*" element={<Error />} />
     </Route>,
