@@ -53,7 +53,7 @@ const RootNav = () => {
   const mobileStyles = {
     container: "fixed w-screen h-24 bg-button z-40",
     fullMenu:
-      "bg-white fixed w-screen h-screen p-20 md:p-0 flex flex-col justify-center items-center z-30 md:w-2/6 lg:w-2/6 ",
+      "bg-white fixed w-screen h-screen p-20 md:p-0 flex flex-col justify-center items-center z-30 md:w-3/6 lg:w-2/6 ",
     menuItem:
       "bg-button text-white w-60 h-16 m-8 rounded-lg flex justify-center items-center sm:w-96 sm:h-16 md:w-60 lg:w-72 sm:my-8 hover:bg-accent hover:text-button hover:font-bold",
     menuIcon: "mr-3 tracking-widest text-sm ",
@@ -63,7 +63,7 @@ const RootNav = () => {
     container:
       "hidden md:block fixed flex content-center w-3/6 top-0 right-0 h-24 bg-transparent z-40 items-center",
     linkSubContainer: "absolute top-6 right-6 flex items-center",
-    link: "mx-12 font-bold text-white hover:bg-accent p-2 rounded-sm",
+    link: "mx-8 font-bold text-white hover:bg-accent p-2 rounded-sm",
     button:
       "font-serif font-bold bg-accent text-button text-sm rounded-lg px-6 py-3 border border-2 border-accent hover:bg-white",
   };
@@ -118,13 +118,7 @@ const RootNav = () => {
         <nav>
           {/* LINKS */}
           <div className={desktopStyles.linkSubContainer}>
-            <Link to="services" onClick={toTop} className={desktopStyles.link}>
-              TIMETABLE
-            </Link>
-            <Link to="faqs" onClick={toTop} className={desktopStyles.link}>
-              FAQs
-            </Link>
-            <Link to="contact" onClick={toTop}>
+            <Link to="signup" onClick={toTop}>
               <button className={desktopStyles.button}>Sign up</button>
             </Link>
           </div>

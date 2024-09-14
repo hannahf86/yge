@@ -9,17 +9,17 @@ import toast, { Toaster } from "react-hot-toast";
 
 const SignUp = () => {
   const styles = {
-    background: "px-8 pt-24 bg-accent/10",
+    background: "px-8 pt-24 bg-accent/10 md:px-16 lg:px-40",
     title: "text-black text-5xl font-bold text-button text-center my-8",
     sectionTitle: "text-purple text-lg font-bold text-left mb-2",
     formLabel: "text-black text-sm font-bold mb-2",
     input:
-      "bg-[#fff] border-2 border-[#fff] rounded-md mb-6 px-3 py-2 focus:border-button",
+      "bg-[#fff] border-2 border-[#fff] rounded-md mb-6 px-3 py-2 focus:border-button ",
     textArea:
-      "bg-[#fff] h-60 flex justify-self-start self-start border-2 border-[#fff] rounded-md mb-8 px-3 py-2 focus:border-button",
+      "bg-[#fff] h-60 lg:w-3/6 flex justify-self-start self-start border-2 border-[#fff] rounded-md mb-8 px-3 py-2 focus:border-button",
     dropDown: "bg-[#fff] px-3 py-2 rounded-md mb-8",
     button:
-      "bg-button py-2 px-6 rounded-md text-white mt-6 border-2 border-button hover:bg-white hover:text-button hover:font-bold",
+      "bg-button py-2 px-6 rounded-md text-white mt-6 border-2 border-button hover:bg-white hover:text-button hover:font-bold lg:mx-60",
   };
 
   // CLEAR FORM
@@ -71,7 +71,7 @@ const SignUp = () => {
         Fill in the form below and we will be in touch.
       </p>
 
-      <form ref={form} onSubmit={sendEmail} className="pb-20">
+      <form ref={form} onSubmit={sendEmail} className="py-12 flex flex-col">
         {/* STUDENT INFORMATION */}
         <h2 className={styles.sectionTitle}>Student Information</h2>
 

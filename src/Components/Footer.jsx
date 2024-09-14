@@ -23,7 +23,7 @@ const Footer = () => {
   const layoutStyles = {
     container:
       "w-screen p-6 sm:px-10 bg-button bottom-0 md:grid grid-cols-4 grid-rows-3",
-    logo: "w-20",
+    logo: "w-20 md:ml-2 md:ml-4 self-center row-span-2 col-start-1",
 
     newsletterContainer:
       "md:col-start-2 md:row-start-1 md:col-span-3 md:row-span-2 pl-20 pt-4",
@@ -32,15 +32,17 @@ const Footer = () => {
     button:
       "text-mono bg-button text-white text-sm rounded-lg px-8 py-2 mx-2 hover:bg-accent",
     input: "px-2 rounded-md",
-    socialContainer: "flex flex-col md:ml-3 self-center",
+
+    socialContainer: "flex flex-col md:ml-3 self-center col-start-2 col-span-2",
     icons: "text-white hover:text-accent mr-4 cursor-pointer",
 
-    contactContainer: "flex flex-col justify-center md:ml-3",
+    contactContainer:
+      "flex flex-col justify-center md:ml-3 col-start-2 row-start-2",
     contactIcons: "text-white hover:text-accent mr-2 cursor-pointer",
 
     navContainer:
-      "flex justify-between mt-12 text-white cursor-pointer md:col-start-4 md:row-start-1 md:row-end-4 md:flex-col md:text-right md:row-span-3",
-    navLink: "hover:text-accent font-thin text-xs",
+      "flex justify-between md:justify-start md:mt-2 mt-12 text-white cursor-pointer md:col-start-4 md:row-start-1 md:row-end-4 md:flex-col md:text-right md:row-span-3",
+    navLink: "hover:text-accent font-thin text-xs md:py-2",
 
     legalContainer:
       "flex flex-col justify-center mt-2 md:row-start-3 md:col-start-2 md:col-end-4 pl-20",
@@ -70,16 +72,20 @@ const Footer = () => {
 
       {/* SOCIAL ICONS */}
       <div id="socialIcons" className={layoutStyles.socialContainer}>
-        <div className="flex mt-4">
-          <FaFacebookSquare size={25} className={layoutStyles.contactIcons} />{" "}
-          <small className="text-white tracking-wider text-sm">
-            York Guitar Ensemble
-          </small>
-        </div>
+        <Link to="https://www.facebook.com/profile.php?id=61565066786390">
+          <div className="flex mt-4">
+            <FaFacebookSquare size={25} className={layoutStyles.contactIcons} />{" "}
+            <small className="text-white tracking-wider text-sm">
+              York Guitar Ensemble
+            </small>
+          </div>
+        </Link>
 
         <div className="flex mt-4">
           <FaInstagram size={25} className={layoutStyles.contactIcons} />{" "}
-          <small className="text-white tracking-wider text-sm">/yge</small>
+          <small className="text-white tracking-wider text-sm">
+            /yorkguitarensemble
+          </small>
         </div>
       </div>
 
@@ -113,6 +119,19 @@ const Footer = () => {
         <Link to="contact" className={layoutStyles.navLink} onClick={toTop}>
           Contact
         </Link>
+      </div>
+
+      {/* WEBSITE BUILT BY  */}
+      <div className="row-start-3 col-start-1 col-span-4 self-end justify-self-center">
+        <small className="text-white text-small">
+          Website build by{" "}
+          <strong>
+            <a href="https://www.jorvikweb.dev" target="_blank">
+              Jorvik Web Dev
+            </a>
+          </strong>{" "}
+          using React, Vite and Vercel hosting
+        </small>
       </div>
     </div>
   );

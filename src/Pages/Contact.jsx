@@ -48,7 +48,7 @@ const Contact = () => {
   };
 
   const textStyles = {
-    title: "text-button py-12 text-center text-5xl",
+    title: "text-button py-12 text-center text-5xl ",
     desc: "text-black text-base text-center mb-8 mx-10",
   };
 

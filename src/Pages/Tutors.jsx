@@ -6,12 +6,17 @@ import { Link } from "react-router-dom";
 
 const Tutors = () => {
   const styles = {
-    background: "bg-white pt-24 flex flex-col justify-center",
+    background: "bg-white pt-24 flex flex-col justify-center md:px-16 lg:px-32",
+
     imageContainer: "grid grid-cols-3 mb-6",
-    image: "rounded-full col-start-1 row-span-2",
+    image: "rounded-full col-start-1 row-span-2 md:p-6",
     subtitle:
-      "text-purple text-xl text-right font-bold mb-2 col-start-2 col-span-2 row-span-2 self-center",
-    title: "text-black text-5xl font-bold text-button text-center my-8",
+      "text-purple text-xl md:text-2xl text-right md:text-left md:pl-4 font-bold mb-2 row-start-1 col-start-2 col-span-2 row-span-2 self-center",
+    website:
+      "hidden md:block col-start-2 col-span-2 row-start-1 row-span-2 self-center text-purple text-xl md:text-md text-right md:text-left md:pl-4 md:pt-16",
+
+    title:
+      "text-black text-5xl font-bold text-button text-center my-8 md:mt-16 md:mb-20",
     bio: "leading-8 text-justify mx-8",
     calltoAction:
       "px-6 py-12 bg-accent/60 flex flex-col justify-center items-center my-12",
@@ -36,6 +41,13 @@ const Tutors = () => {
               className={styles.image}
             />
             <h2 className={styles.subtitle}>Hannah Feehan</h2>
+            <Link
+              to="https://www.hannahfeehan.com"
+              target="_blank"
+              aria-label="Hannah Feehan's website"
+              className={styles.website}>
+              <h3>hannahfeehan.com</h3>
+            </Link>
           </div>
 
           <p className="text-md">

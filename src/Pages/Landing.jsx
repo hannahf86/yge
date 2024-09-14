@@ -17,14 +17,14 @@ const Landing = () => {
       "mx-8 font-serif italic text-black text-base md: text-center mb-12",
     description: "text-black text-center text-base",
 
-    scheduleContainer: "bg-[#FFF] px-8 mt-12 py-12",
+    scheduleContainer: "bg-[#FFF] px-8 md:px-16 lg:px-32 mt-12 py-12",
     sectionTitle: "text-center font-bold text-button text-2xl",
     scheduleGrid: "grid grid-cols-auto gap-8 mt-6",
     scheduleTitle: "text-purple font-bold text-lg text-center mb-2",
     time: "text-center text-black mb-2 text-sm",
 
     calltoAction:
-      "px-6 py-12 bg-accent/60 flex flex-col justify-center items-center my-12",
+      "px-6 md:px-16 py-12 bg-accent/60 flex flex-col justify-center items-center my-12",
     callToActionText: "text-center",
     link: "font-bold hover:text-button hover:underline",
     button:
@@ -58,7 +58,7 @@ const Landing = () => {
 
         <div
           id="what-we-do"
-          className="text-justify lg:text-center bg-[#FFF] py-12 px-8">
+          className="text-justify lg:text-center bg-[#FFF] py-12 px-8 md:px-16 md:px-32">
           <h3 className="text-button font-bold text-lg text-center mb-8">
             What do we do?
           </h3>
@@ -88,7 +88,7 @@ const Landing = () => {
           </p>
         </div>
 
-        <div id="what-we-do" className=" bg-[#FFF] py-12 px-8 mt-12">
+        <div id="what-we-do" className=" bg-[#FFF] py-12 px-8 md:px-32 mt-12">
           <h3 className="text-button font-bold text-lg text-center mb-8">
             These ensembles are for you if want...
           </h3>
