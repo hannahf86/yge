@@ -90,7 +90,7 @@ const RootNav = () => {
               </span>
             </Link> */}
 
-            <Link to="about" onClick={toTop}>
+            <Link to="tutors" onClick={toTop}>
               <span className={mobileStyles.menuItem}>
                 <p className="text-sm ">Tutors</p>
               </span>

@@ -6,7 +6,7 @@ import { HiMail, HiLocationMarker } from "react-icons/hi";
 import { HiPhone } from "react-icons/hi2";
 
 // IMAGES
-import logo from "../Assets/profilePic.png";
+import banner from "../Assets/banner.webp";
 
 // MOTION
 import { motion } from "framer-motion";
@@ -48,7 +48,7 @@ const Contact = () => {
   };
 
   const textStyles = {
-    title: "text-button text-2xl pb-8 text-center text-5xl",
+    title: "text-button py-12 text-center text-5xl",
     desc: "text-black text-base text-center mb-8 mx-10",
   };
 
@@ -95,7 +95,7 @@ const Contact = () => {
       whileInView="animate"
       id="contact">
       <div className={layoutStyles.logoContainer}>
-        <img src={logo} alt="york guitar ensemble logo" />
+        <img src={banner} alt="york guitar ensemble logo" />
         <motion.h1 variants={variants} className={textStyles.title}>
           Contact
         </motion.h1>

@@ -94,7 +94,7 @@ const Footer = () => {
         <div className="flex mt-4">
           <MdEmail size={25} className={layoutStyles.contactIcons} />{" "}
           <small className="text-white tracking-wider text-sm">
-            hello@yorkguitarensemble.com
+            hello@yge.com
           </small>
         </div>
       </div>

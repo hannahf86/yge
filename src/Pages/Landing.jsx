@@ -53,7 +53,7 @@ const Landing = () => {
           Group Guitar Lessons <br />&<br /> Ensemble Rehearsals
         </h1>
         <h2 className={styles.subtitle}>
-          Making acoustic and classical guitar music available to all
+          Making guitar music available to all
         </h2>
 
         <div
@@ -74,7 +74,17 @@ const Landing = () => {
             <br />
             At the end of each term, we will organise a short concert for our
             friends and family, with drinks and cake. Participation is not
-            required, but encouraged, because its so much fun with your friend.
+            required, but encouraged, because its so much fun with your friends.
+            <br />
+            <br />
+            Our experienced tutor has nearly two decades of preparing students
+            for performances and can build the confidence of even the most shy
+            performer. Each individual circumstance will be handled with care
+            and considersation.
+            <br />
+            <br />
+            You <strong>do not</strong> need to be able to read sheet music to
+            join. We arrange our pieces to suit all guitar playing styles.
           </p>
         </div>
 
@@ -105,7 +115,7 @@ const Landing = () => {
               {" "}
               <FaCheck size={20} className="mr-6 text-green-700" />
             </div>
-            Meet likeminded people and have fun
+            Meet likeminded people and have fun without judgement of skill level
           </li>
 
           <li className="mb-6 list-none flex items-center justify-center text-sm">
@@ -126,7 +136,7 @@ const Landing = () => {
           children, teens and adults by using the button below.
         </p>
 
-        <Link to="Register">
+        <Link to="register">
           <button className={styles.button}>Register</button>
         </Link>
       </div>
@@ -171,6 +181,20 @@ const Landing = () => {
               Fifth Ave, YO31 0PN
             </p>
           </div>
+
+          {/* <div>
+            <h2 className={styles.scheduleTitle}>
+              Ensemble Rehearsal <br />
+              Slot 3
+            </h2>
+            <h3 className={styles.time}>Saturday @ 9:00 to 9:45</h3>
+            <p className="text-center text-black text-xs mt-4">
+              <strong>Location:</strong>
+              <br />
+              St. Aelred&apos;s Community Center, <br />
+              Fifth Ave, YO31 0PN
+            </p>
+          </div> */}
         </div>
 
         {/* CALL TO ACTION - SIGN UP */}

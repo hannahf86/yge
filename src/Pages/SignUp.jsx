@@ -10,7 +10,7 @@ import toast, { Toaster } from "react-hot-toast";
 const SignUp = () => {
   const styles = {
     background: "px-8 pt-24 bg-accent/10",
-    title: "text-black text-2xl font-bold text-button text-center my-8",
+    title: "text-black text-5xl font-bold text-button text-center my-8",
     sectionTitle: "text-purple text-lg font-bold text-left mb-2",
     formLabel: "text-black text-sm font-bold mb-2",
     input:
@@ -204,6 +204,31 @@ const SignUp = () => {
           onChange={(e) => setAdditional(e.target.value)}
           required
         />
+
+        {/* TIME PREFERENCES */}
+        <h2 className={styles.sectionTitle}>Time Preferences</h2>
+        <p className={styles.formLabel}>
+          Precise session times will be decided when we know exactly who is
+          interested and the abilities of those people, so we can group folks in
+          the best way possible.
+          <br />
+          <br />
+          Currently, the sessions are as follows, with a view to opening 1-3
+          more groups if needed. <br /> <br />
+          <li className="list-disc ml-8 pb-2">
+            Session One - 9:30am till 10:15am
+          </li>
+          <li className="list-disc ml-8 pb-2">
+            Session Two - 10:30am till 11:15am
+          </li>
+          <br /> Do you have any time constraints or preferences?
+        </p>
+
+        <select className={styles.dropDown} name="message" required>
+          <option defaultValue={0}>Select</option>
+          <option value="Before 11am">Before 11am</option>
+          <option value="Anytime">Anytime</option>
+        </select>
 
         {/* CONTACT INFORMATION */}
         <h2 className={styles.sectionTitle}>Contact Information</h2>

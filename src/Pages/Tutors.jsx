@@ -1,30 +1,39 @@
 // images
+import hannah from "../Assets/profile-pic.jpg";
 
-const About = () => {
+const Tutors = () => {
   const styles = {
-    background: "bg-white pt-24",
-    title: "text-black text-2xl font-bold text-button text-center my-8",
-    subtitle: "text-purple text-xl font-bold mb-2",
+    background: "bg-white pt-24 flex flex-col justify-center",
+    imageContainer: "grid grid-cols-3 mb-6",
+    image: "rounded-full col-start-1 row-span-2",
+    subtitle:
+      "text-purple text-xl text-right font-bold mb-2 col-start-2 col-span-2 row-span-2 self-center",
+    title: "text-black text-5xl font-bold text-button text-center my-8",
     bio: "leading-8 text-justify mx-8 pb-12",
   };
 
   return (
     <>
-      <div id="about" className={styles.background}>
+      <div id="tutors" className={styles.background}>
         <h1 className={styles.title}>YGE Tutors</h1>
 
         {/* HANNAH */}
         <div className={styles.bio}>
-          <h2 className={styles.subtitle}>Hannah Feehan</h2>
-          <div className={styles.image}>
-            <img src={""} />
+          <div className={styles.imageContainer}>
+            <img
+              src={hannah}
+              alt="Hannah Feehan, guitar tutors"
+              className={styles.image}
+            />
+            <h2 className={styles.subtitle}>Hannah Feehan</h2>
           </div>
 
           <p className="text-md">
-            Hannah was given the opportunity to start teaching at the age of 19.
+            Hannah started teaching at the age of 19 years old.
             <br />
-            In that time she has guided students to many accolades, including
-            national ensemble places{" "}
+            <br />
+            Nearly two decades later, she has guided students to many accolades,
+            including national ensemble places{" "}
             <a
               href="https://guitarcircus.org.uk/nyge-3/what-we-offer-nyge-2/"
               target="_blank"
@@ -50,9 +59,9 @@ const About = () => {
             <br />
             <br />
             Hannah has experience across a very broad range of music, from
-            performing rock music live across the UK with her band Third
-            Conduct, to writing music for computer games and mobiles apps, to
-            finally settling on the beautiful classical guitar.
+            performing as lead guitarist with her band Third Conduct across the
+            UK, to writing music for computer games and mobiles apps, to finally
+            settling on the beautiful classical guitar.
             <br />
             <br />
             In 2009, Hannah started a guitar ensemble with only three students.
@@ -69,6 +78,9 @@ const About = () => {
             ensembles.
             <br />
             <br />
+            You are guarenteed to have a fun lesson with Hannah!
+            <br />
+            <br />
           </p>
         </div>
       </div>
@@ -76,4 +88,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Tutors;

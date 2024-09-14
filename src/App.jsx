@@ -13,8 +13,9 @@ import RootNav from "./Components/RootNav";
 import Error from "./Pages/Error";
 import Landing from "./Pages/Landing";
 import SignUp from "./Pages/SignUp";
-import About from "./Pages/About";
+import Tutors from "./Pages/Tutors";
 import Contact from "./Pages/Contact";
+import Register from "./Pages/Register";
 
 // HELPERS & LOADERS
 
@@ -23,8 +24,9 @@ const router = createBrowserRouter(
     <Route path="/" element={<RootNav />}>
       <Route index element={<Landing />} />
       <Route path="signup" element={<SignUp />} />
-      <Route path="about" element={<About />} />
+      <Route path="tutors" element={<Tutors />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="register" element={<Register />} />
       {/* ERROR HANDLING */}
       <Route path="*" element={<Error />} />
     </Route>,
