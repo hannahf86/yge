@@ -16,6 +16,7 @@ import SignUp from "./Pages/SignUp";
 import Tutors from "./Pages/Tutors";
 import Contact from "./Pages/Contact";
 import Register from "./Pages/Register";
+import Taster from "./Pages/Taster";
 
 // HELPERS & LOADERS
 
@@ -27,6 +28,7 @@ const router = createBrowserRouter(
       <Route path="tutors" element={<Tutors />} />
       <Route path="contact" element={<Contact />} />
       <Route path="register" element={<Register />} />
+      <Route path="taster" element={<Taster />} />
       {/* ERROR HANDLING */}
       <Route path="*" element={<Error />} />
     </Route>,

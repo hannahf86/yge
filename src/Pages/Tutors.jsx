@@ -1,6 +1,9 @@
 // images
 import hannah from "../Assets/profile-pic.jpg";
 
+// REACT ROUTER DOM
+import { Link } from "react-router-dom";
+
 const Tutors = () => {
   const styles = {
     background: "bg-white pt-24 flex flex-col justify-center",
@@ -9,7 +12,14 @@ const Tutors = () => {
     subtitle:
       "text-purple text-xl text-right font-bold mb-2 col-start-2 col-span-2 row-span-2 self-center",
     title: "text-black text-5xl font-bold text-button text-center my-8",
-    bio: "leading-8 text-justify mx-8 pb-12",
+    bio: "leading-8 text-justify mx-8",
+    calltoAction:
+      "px-6 py-12 bg-accent/60 flex flex-col justify-center items-center my-12",
+    callToActionText: "text-center",
+    link: "font-bold hover:text-button hover:underline",
+    button:
+      "bg-button py-2 px-6 rounded-md text-white mt-6 border-2 border-button hover:bg-white hover:text-button hover:font-bold",
+    scheduleTitle: "text-purple font-bold text-lg text-center mb-2",
   };
 
   return (
@@ -79,9 +89,19 @@ const Tutors = () => {
             <br />
             <br />
             You are guarenteed to have a fun lesson with Hannah!
-            <br />
-            <br />
           </p>
+        </div>
+
+        {/* CALL TO ACTION -  GUITAR LESSONS */}
+        <div className={styles.calltoAction}>
+          <h2 className={styles.scheduleTitle}>Sound good?</h2>
+          <p className={styles.callToActionText}>
+            Try a free taster lesson with Hannah before you commit
+          </p>
+
+          <Link to="/taster">
+            <button className={styles.button}>Free taster lesson</button>
+          </Link>
         </div>
       </div>
     </>

@@ -245,7 +245,7 @@ const SignUp = () => {
         <p className={styles.formLabel}>Contact Name</p>
         <input
           type="text"
-          name="user_name"
+          name="name"
           placeholder="Contact Name"
           className={styles.input}
           onChange={(e) => setContactName(e.target.value)}
@@ -256,7 +256,7 @@ const SignUp = () => {
         <p className={styles.formLabel}>Contact Email</p>
         <input
           type="email"
-          name="user_email"
+          name="email"
           placeholder="Contact Email"
           className={styles.input}
           onChange={(e) => setContactEmail(e.target.value)}

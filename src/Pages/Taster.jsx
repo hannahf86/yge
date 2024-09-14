@@ -29,10 +29,10 @@ const variants = {
   },
 };
 
-const Register = () => {
+const Taster = () => {
   // STYLES
   const layoutStyles = {
-    background: "bg-white h-full w-screen z-0 pb-12 pt-24",
+    background: "bg-white h-full w-screen z-0 pb-12 pt-24 px-8",
     textContainer: "relative mx-8",
     button:
       "bg-button py-2 px-6 rounded-md text-white mt-6 border-2 border-button hover:bg-white hover:text-button hover:font-bold",
@@ -45,8 +45,8 @@ const Register = () => {
   };
 
   const textStyles = {
-    title: "text-button text-2xl py-12 text-center text-5xl",
-    desc: "text-black text-base text-center mb-8 mx-10",
+    title: "text-button py-12 text-center text-3xl",
+    desc: "text-black text-base text-center mb-8 ",
     dropDown:
       "bg-[#fff] border-2 border-[#fff] rounded-md mb-6 px-3 py-2 focus:border-button",
   };
@@ -92,15 +92,15 @@ const Register = () => {
       variants={variants}
       initial="initial"
       whileInView="animate"
-      id="register">
+      id="taster">
       <div className={layoutStyles.logoContainer}>
         <img src={banner} alt="york guitar ensemble logo" />
         <motion.h1 variants={variants} className={textStyles.title}>
-          Register
+          Book a taster lesson
         </motion.h1>
         <motion.h2 variants={variants} className={textStyles.desc}>
-          Please fill out the form below if you are interested in group guitar
-          lessons.
+          Please fill out the form below if you are interested in a free 45
+          minute taster session
         </motion.h2>
       </div>
 
@@ -167,4 +167,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Taster;
