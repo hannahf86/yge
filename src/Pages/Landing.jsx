@@ -159,7 +159,7 @@ const Landing = () => {
               Ensemble Rehearsal <br />
               Slot 1
             </h2>
-            <h3 className={styles.time}>Saturday @ 9:00 to 9:45</h3>
+            <h3 className={styles.time}>Saturday @ 9:30 to 10:15</h3>
             <p className="text-center text-black text-xs mt-4">
               <strong>Location:</strong>
               <br />
@@ -173,7 +173,7 @@ const Landing = () => {
               Ensemble Rehearsals
               <br /> Slot 2
             </h2>
-            <h3 className={styles.time}>Saturday @ 10:00 to 10:45</h3>
+            <h3 className={styles.time}>Saturday @ 10:30 to 11:15</h3>
             <p className="text-center text-black text-xs mt-4">
               <strong>Location:</strong>
               <br />
