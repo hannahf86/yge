@@ -123,7 +123,7 @@ const Footer = () => {
 
       {/* WEBSITE BUILT BY  */}
       <div className="row-start-3 col-start-1 col-span-4 self-end justify-self-center">
-        <small className="text-white text-small">
+        <small className="text-white text-small pt-4">
           Website build by{" "}
           <strong>
             <a href="https://www.jorvikweb.dev" target="_blank">
