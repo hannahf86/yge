@@ -92,7 +92,7 @@ const Landing = () => {
           <h3 className="text-button font-bold text-lg text-center mb-8">
             These ensembles are for you if want...
           </h3>
-          <li className="mb-6 list-none flex items-center justify-center text-sm">
+          <li className="mb-6 list-none flex items-center justify-center text-md">
             <div>
               {" "}
               <FaCheck size={20} className="mr-6 text-green-700" />
@@ -101,7 +101,7 @@ const Landing = () => {
             an ensemble
           </li>
 
-          <li className="mb-6 list-none flex items-center justify-center text-sm">
+          <li className="mb-6 list-none flex items-center justify-center text-md">
             <div>
               {" "}
               <FaCheck size={20} className="mr-6 text-green-700" />
@@ -110,7 +110,7 @@ const Landing = () => {
             lessons
           </li>
 
-          <li className="mb-6 list-none flex items-center justify-center text-sm">
+          <li className="mb-6 list-none flex items-center justify-center text-md">
             <div>
               {" "}
               <FaCheck size={20} className="mr-6 text-green-700" />
@@ -118,7 +118,7 @@ const Landing = () => {
             Meet likeminded people and have fun without judgement of skill level
           </li>
 
-          <li className="mb-6 list-none flex items-center justify-center text-sm">
+          <li className="mb-6 list-none flex items-center justify-center text-md">
             <div>
               {" "}
               <FaCheck size={20} className="mr-6 text-green-700" />
