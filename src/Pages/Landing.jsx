@@ -156,7 +156,7 @@ const Landing = () => {
         <div className={styles.scheduleGrid}>
           <div>
             <h2 className={styles.scheduleTitle}>
-              Ensemble Rehearsal <br />
+              Rehearsal
               Slot 1
             </h2>
             <h3 className={styles.time}>Saturday @ 9:30 to 10:15</h3>
@@ -170,8 +170,7 @@ const Landing = () => {
 
           <div>
             <h2 className={styles.scheduleTitle}>
-              Ensemble Rehearsals
-              <br /> Slot 2
+              Rehearsal Slot 2
             </h2>
             <h3 className={styles.time}>Saturday @ 10:30 to 11:15</h3>
             <p className="text-center text-black text-xs mt-4">
